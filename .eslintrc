@@ -1,0 +1,14 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "react/prop-types": 0
+  },
+  "globals": {
+    "expect": true,
+    "window": true,
+    "beforeAll": true,
+    "afterAll": true,
+  },
+  "env": {
+    },
+}
