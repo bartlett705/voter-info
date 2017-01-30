@@ -1,0 +1,29 @@
+{
+  "name": "voter-info",
+  "version": "0.0.1",
+  "description": "display gov't critters for a given address",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bartlett705/voter-info.git"
+  },
+  "author": "ahmad@codemosey.net",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bartlett705/voter-info/issues"
+  },
+  "homepage": "https://github.com/bartlett705/voter-info#readme",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-preset-react": "^6.22.0",
+    "eslint-plugin-import": "^2.2.0",
+    "react": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
