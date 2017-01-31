@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { requestReps, receiveReps } from '../actions';
+import { requestReps, receiveReps, fetchReps } from '../actions';
 import App from '../components/App';
 
 const mapStateToProps = (state) => {
@@ -18,12 +18,15 @@ const mapDispatchToProps = (dispatch) => {
     receiveReps: (reps) => {
       dispatch(receiveReps(reps))
     },
+    fetchReps: (address) => {
+      dispatch(fetchReps(address))
+    },
   };
 };
 
 const ConnectedApp = connect(
   mapStateToProps,
-  mapDispatchToProps
-)(App)
+  mapDispatchToProps,
+)(App);
 
 export default ConnectedApp

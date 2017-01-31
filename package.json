@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "hot": "webpack-dev-server --inline --hot",
+    "build" : "webpack -w",
     "test": "jest"
   },
   "repository": {
@@ -19,7 +20,13 @@
   "homepage": "https://github.com/bartlett705/voter-info#readme",
   "dependencies": {
     "babel": "^6.5.2",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-es2015-spread": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.22.0",
+    "css-loader": "^0.26.1",
     "eslint": "^3.14.1",
     "eslint-config-airbnb": "^14.0.0",
     "eslint-config-airbnb-base": "^10.0.1",
@@ -27,11 +34,14 @@
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-react": "^6.9.0",
     "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.10.0",
     "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "react-redux": "^5.0.2",
     "redux": "^3.6.0",
     "redux-logger": "^2.7.4",
     "redux-thunk": "^2.2.0",
+    "style-loader": "^0.13.1",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
   }

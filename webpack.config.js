@@ -32,10 +32,10 @@ module.exports = {
       exclude: /node_modules/,
       loaders: ['babel-loader'],
     }, {
-    test: /\.(scss|css)$/,
+    test: /\.(css)$/,
     loader: ExtractTextPlugin.extract(
         'style', // backup loader when not building .css file
-        'css!sass' // loaders to preprocess CSS
+        'css' // loaders to preprocess CSS
     )
     }, {
       test: /\.html$|\.jpe?g$|\.ico$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/,
@@ -47,6 +47,6 @@ module.exports = {
     extensions: ['', '.js', '.jsx'],
   },
   plugins: [
-    new ExtractTextPlugin('main.css'),
+    new ExtractTextPlugin('style.css'),
   ]
 };

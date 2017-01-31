@@ -16,43 +16,30 @@ body {
   padding: 0.5em;
   margin: 1em;
   border-radius: 3px;
-  text-align: center;
-}
-.input-form {
-  text-align: center;
 }
 .division-name {
   font-weight: 700;
   text-align: center;
   border-bottom: 1px solid black;
 }
-.office:not(:last-child)::after {
-  display: block;
-  content: '';
-  width: 50%;
-  border-bottom: 1px dashed black;
-  margin: 1em auto;
+.division::after {
+  
 }
 .office, .division-name {
   padding: 0.25em 0.5em;
+}
+.office {
+  font-weight: 300;
 }
 .official-party {
   font-style: italic;
   font-weight: 300;
 }
-.official-name::after {
-  margin: 0 0.5em;
-  content: "|";
-}
 .official-photo {
   border-radius: 10px;
   width: 15em;
-  margin: 1em 0;
 }
 .official-name {
   font-weight: 500;
   display: inline;
-}
-.office-name {
-  font-weight: 700;
 }

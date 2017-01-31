@@ -1,8 +1,8 @@
-const reducer = (state = {
+function reducer(state = {
   address: '',
   isPending: false,
   reps: [],
-}, action) => {
+}, action) {
   switch (action.type) {
     case 'REQUEST_REPS':
       return {
@@ -17,4 +17,7 @@ const reducer = (state = {
         reps: action.reps,
       }
   }
-}
+  return state;
+};
+
+export default reducer;
